@@ -4,7 +4,7 @@
 
 
 
-/* RESET PADRÃO */
+/* RESET PADRÃO DO NAVEGADOR*/
 *{
     margin: 0px;
     padding: 0px;
@@ -96,10 +96,13 @@ removendo conf de lista, espaçamento latera, margin no topo e efeito cursor poi
     width: 30px;
 }
 
+/*formatação de todos os links da pagina que não possuem formatação mais especifica*/
 a{
     color: rgb(247, 182, 0);
 }
 
+/* formatação dos conteudos principais, colocando as postagens principais e a barra lateral uma ao lado da outra,
+definindo largura, centralizando com margem automatica e margem*/
 #postagem-principal{
     display: flex;
     flex-direction: row;
@@ -108,56 +111,51 @@ a{
     margin-top: 15px;
 }
 
+/* formatação da postagem 1, definindo fundo branco, margin na direita e espaçamento dentro da caixa*/
 #postagem-1 {
     background-color: white;
     margin-right: 20px;
     padding: 20px;
 }
 
-#postagem-2, #postagem-3, #postagem-4, #postagem-5 {
+/* formatação de todas outras postagens , definindo fundo branco, margin na direita e espaçamento dentro da caixa*/
+.postagem{
     background-color: white;
     margin-right: 20px;
     padding: 20px;
     margin-top: 20px;
 }
 
-#postagem-1 h1{
+/* formatação dos titulos das postagens*/
+.postagem > h1{
     font-size: 30px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     color: rgb(247, 182, 0);
 }
 
-#postagem-2 h1{
-    font-size: 30px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    color: rgb(247, 182, 0);
-}
-
-#postagem-1, #postagem-2{
+/* formatação dos paragrafos de todas as postagens, alterando tipo da fonte*/
+.postagem > p{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-#postagem-1 > img{
+/*formatação das imagens das postagens*/
+.postagem > img {
     width: 600px;
     padding-top: 25px;
 }
 
-#postagem-2 > img{
-    width: 600px;
-    padding-top: 25px;
-}
-
-
+/*formatação da barra lateral, definindo cor de fundo, margem em baixo e espaçamento dentro da caixa*/
 #postagens-recentes{
     background-color: white;
     margin-bottom: 20px;
     padding: 10px;
+    width: 240px;
+    margin-top: 20px;
 }
 
+/*formatação do subtitulo das postagens recentes, colocando fundo cinza, mudando cor da letra, espaçamento dentro da caixa,
+margem em baixo, mudando tipo da fonte e alterando tamanho da fonte*/
 #postagens-recentes > h2{
     background-color: rgb(189, 188, 188);
     color: rgb(85, 85, 85);
@@ -167,28 +165,36 @@ a{
     font-size: 23px;
 }
 
+/*formatação do paragrafo das postagens recentes, alterando tipo de fonte, e espaçamento denro da caixa*/
 #postagens-recentes > p{
     font-family: 'Poppins', sans-serif;
     padding-bottom: 5px;
     padding-top: 5px;
 }
 
+/*formatação do segundo paragrafo das postagens recentes, criando uma borda superior*/
 #paragrafo-2{
     border-top: 2px solid rgb(189, 188, 188);
     margin-top: 5px;
 }
 
+/*formatando links das postgens recentes, mudando cor das letras e tirando conf dos links*/
 #postagens-recentes > a{
     text-decoration: none;
     color:rgb(247, 182, 0);
 }
 
+/*formatando a barra lateral de categorias, colocando cor no fundo, margem na direita, espaçamento dentro da caixa e 
+defindo largura*/
 #categorias{
     background-color: white;
     margin-right: 20px;
     padding: 10px;
+    width: 240px;
 }
 
+/*formatando o subtitulo na barra lateral de categorias, colocando cor no fundo, espaçamento dentro da caixa, margem em baixo,
+mudando tipo da fonte e alterando tamanho da fonte*/
 #categorias > h2{
     background-color: rgb(189, 188, 188);
     color: rgb(85, 85, 85);
@@ -198,20 +204,25 @@ a{
     font-size: 23px;
 }
 
+/*formatando a lista da categoria*/
 #lista-categoria{
     list-style: none;
 }
 
+/*formatando cada opção da lista da categoria, mudando tipo de fonte*/
 #lista-categoria > li{
     font-family: 'Poppins', sans-serif
 }
 
+/*formatando links da categoria, tirando conf de links e alterando a cor das letras*/
 #lista-categoria > li > a{
     text-decoration: none;
     color: rgb(247, 182, 0);
 
 }
 
+/*formatando o roda pé, colocando uma cor de fundo, mudando a cor da letra, margem no topo, centralizando texto e alterando
+o tamanho da fonte*/
 footer{
     background-color: rgb(247, 182, 0);
     color: rgb(85, 85, 85);
