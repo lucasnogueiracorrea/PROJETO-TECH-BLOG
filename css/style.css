@@ -230,3 +230,11 @@ footer{
     text-align: center;
     font-size: 18px
 }
+
+
+.page-marcada{
+    background-color: white;
+    color:rgb(247, 182, 0) !important;
+    padding: 1px;
+    border-radius: 5px;
+}
