@@ -228,13 +228,81 @@ footer{
     color: rgb(85, 85, 85);
     margin-top: 50px;
     text-align: center;
-    font-size: 18px
+    font-size: 18px;
+    
 }
 
-
+/* marcando paginas selecionadas*/
 .page-marcada{
     background-color: white;
     color:rgb(247, 182, 0) !important;
     padding: 1px;
     border-radius: 5px;
 }
+
+/*responsivo*/
+@media (max-width: 920px){
+    #barra-lateral{
+        display: none;
+    }
+
+    #postagem-principal{
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        margin: auto;
+        margin-top: 15px;
+        margin: 0;
+    }
+
+    .postagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    #postagem-1{
+        margin: 0;
+    }
+
+    footer{
+        margin: 0;
+    }
+}
+
+/*responsivo*/
+@media (max-width: 660px){
+
+    #postagem-principal{
+        display: flex;
+        flex-direction: row;
+        width: 480px;
+        margin: auto;
+        margin-top: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .postagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin: auto;
+    }
+
+    .postagem > img{
+        width: 400px;
+    }
+
+    #postagem-1{
+        margin: 0;
+    }
+
+    footer{
+        margin: 0;
+    }
+}
+
